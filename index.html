@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mi Web Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img width="50" height="40" src="imgs/logo_upc_red.png" alt="" />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="">Productos</a></li>
+        <li>
+          <a href="">Promociones</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Tarjeta Credito</a></li>
+            <li><a href="">Tarjeta Debito</a></li>
+            <li><a href="">Beneficios Viaje</a></li>
+            <li><a href="">Plin</a></li>
+          </ul>
+        </li>
+        <li><a href="">Zona Digital</a></li>
+        <li><a href="#contactanos">Contactanos</a></li>
+      </ul>
+    </nav>
+    <!--SECCION PRODUCTOS-->
+    <section class="seccion-productos">
+      <div class="div-gral-productos">
+        <div class="div-prod-texto">
+          <h2>Seccion Productos</h2>
+          <p>
+            Un producto, en economía, es todo bien o servicio que se genera a
+            través de un proceso productivo y que puede venderse, intercambiarse
+            o generar ingresos en el mercado. Desde una barra de pan hasta un
+            servicio de asesoría o una acción en bolsa: si se puede ofrecer en
+            el mercado y tiene valor económico, es un producto.
+          </p>
+          <p>
+            Además, en economía también se consideran productos ciertos activos
+            financieros que generan rentabilidad, como bonos o fondos de
+            inversión.
+          </p>
+          <button>Mas info..</button>
+        </div>
+
+        <div class="div-prod-img">
+          <img src="imgs/productos.png" />
+        </div>
+      </div>
+    </section>
+    <!--SECCION ZONA DIGITAL-->
+    <section class="seccion-zondig">
+      <div class="div-gral-zondig">
+        <div class="div-zondig-texto">
+          <h2>Seccion ZoNA Digital</h2>
+          <p>
+            En el año 2006, en la pintoresca ciudad de Ahuachapán, nació un
+            sueño de superación y emprendimiento que cambiaría la forma en que
+            los salvadoreños interactúan con la tecnología. Este sueño se
+            materializó en la forma de Zona Digital, un lugar que comenzó como
+            una modesta sala de juegos que ofrecía consolas y computadoras
+            personales. En aquellos primeros días, la idea de un espacio de
+            entretenimiento digital era todavía una rareza y enfrentó desafíos
+            financieros significativos.
+          </p>
+          <p>
+            El año 2012 marcó un hito significativo en la historia de Zona
+            Digital, ya que se formalizó como empresa a través de una
+            estratégica alianza en la capital de El Salvador. Este paso crucial
+            permitió que la Zona Digital expandiera sus horizontes y abriera sus
+            puertas en el reconocido centro comercial Plaza Merliot.
+          </p>
+        </div>
+        <div class="div-zondig-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9CXZI0DyUyM?si=ATuti_ve8Cymliv7"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!--SECCION FORMULARIO-->
+    <section class="seccion-formulario" id="contactanos">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos....</p>
+        <form class="formulario">
+          <!--INPUT:TEXT-->
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+
+          <!--LISTA DESPEGABLE-->
+          <div class="campo">
+            <label for="nombres">Pais</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un pais</option>
+              <option value="peru">Peru</option>
+              <option value="colombia">Colombia</option>
+              <option value="argentina">Argentina</option>
+              <option value="mexico">Mexico</option>
+            </select>
+          </div>
+          <!--CHECKBOX-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="a"
+                  />Nooo</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="b"
+                  />Copie</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="c"
+                  />loooo</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="d"
+                  />mismo</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--RADIO-->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="m" />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="f" />Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

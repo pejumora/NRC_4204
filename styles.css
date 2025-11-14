@@ -1,0 +1,164 @@
+/*MENU*/
+.topheader {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.Menu-Horizontal li a {
+  display: Block;
+  padding: 15px 20px;
+  color: blue;
+  text-decoration: none;
+}
+.Menu-Vertical {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  display: none;
+  width: 150px;
+}
+.Menu-Horizontal li a:hover {
+  color: red;
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: Block;
+}
+/*SECCION PRODUCTOS*/
+.seccion-productos {
+  padding: 60px 20px;
+  background-color: white;
+}
+.div-gral-productos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.div-prod-texto {
+  flex: 1;
+}
+.div-prod-texto h2 {
+  color: blueviolet;
+}
+.div-prod-texto p {
+  color: black;
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: justify;
+}
+.div-prod-texto button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(236, 101, 5, 0.9);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.div-prod-img {
+  flex: 1;
+}
+.div-prod-img img {
+  width: 100%;
+  max-width: 500px;
+}
+/*SECCION ZON DIGITAL*/
+.seccion-zondig {
+  padding: 60px 20px;
+  background-color: white;
+}
+.div-gral-zondig {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.div-zondig-texto {
+  flex: 1;
+}
+.div-zondig-texto h2 {
+  color: blueviolet;
+}
+.div-zondig-texto p {
+  color: black;
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: justify;
+}
+.div-zondig-video {
+  flex: 1;
+}
+.div-zondig-video iframe {
+  width: 100%;
+  max-width: 500px;
+}
+/*SECCION FORMULARIO*/
+.seccion-formulario {
+  background-color: #8deeee;
+  padding: 40px;
+  border: 3px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.div-cont-formulario {
+  background-color: #9b958d;
+  padding: 30px;
+  border: 2px solid #7e04f1;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+.campo {
+  background-color: #94f0d2;
+  padding: 15px;
+  border: 1px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #7e04f1;
+}
+.formulario input[type="text"],
+.formulario select {
+  width: 100%;
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #000000;
+  background-color: #c79cef;
+  border-radius: 8px;
+}
+.formulario button {
+  background-color: #ef9d05;
+  color: #000000;
+  border: 1.5px solid #1e04cb;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
